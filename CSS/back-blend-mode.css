@@ -1,0 +1,19 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.box{
+    padding: 10px;
+    width: 400px;
+    height: 400px;
+    border: 3px solid black;
+    /* background-image: linear-gradient(to right,red,yellow),url(imagess/pexels-lilartsy-1624076.jpg); */
+
+    /* background-blend-mode: screen; */
+    /* background-blend-mode: overlay; */
+    /* background-blend-mode: darken; */
+    /* background-blend-mode: lighten; */
+    /* background-blend-mode: hue; */
+    background-image: linear-gradient(to right,red,yellow),url(imagess/pexels-lilartsy-1624076.jpg),url(imagess/Blue-Flower-12.jpg);
+    background-blend-mode: overlay;
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .box1{
+            width: 300px;
+            height: 300px;
+            border: 0px solid black;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            margin: -150px;
+            perspective: 500px;
+        }
+        .box1:hover .content{
+            transform: rotateY(180deg);
+        }
+        .content{
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            transition: transform 1s;
+            transform-style: preserve-3d;
+        }
+        .front , .back{
+            height: 100%;
+            width: 100%;
+            font-size: 60px;
+            color: black;
+            background: purple;
+            text-align: center;
+            line-height: 300px;
+            position: absolute;
+            border-radius: 10px;
+            backface-visibility: hidden;
+        }
+        .back{
+            background: black;
+            color: purple;
+            transform: rotateY(180deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">
+        <div class="content">
+            <div class="front">Front</div>
+            <div class="back">Back</div>
+        </div>
+    </div>
+</body>
+</html>

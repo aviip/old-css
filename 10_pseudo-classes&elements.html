@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root{
+            --main-color : red;
+        }
+        body{
+            font-family: arial;
+        }
+        ul a{
+            color: var(--main-color);
+            text-decoration: none;
+        }
+        /* li:first-child{
+            color: red;
+        }
+        #list li:last-child{
+            color: blue;
+        } */
+
+        /* li:nth-child(2) */
+        /* li:nth-child(3n) */
+        /* li:nth-child(2n-1) */
+        /* li:nth-last-child(2n){
+            color: rgb(135, 180, 12);
+        } */
+
+        /* li:nth-of-type(2) */
+        /* li:nth-of-type(2n+1){ */
+        /* p:nth-last-of-type(2n+1){
+            color: red;
+        } */
+
+        /* li:only-child{ */
+        /* li:only-of-type{
+            color: red;
+        } */
+
+        /* p:last-of-type{
+            color: red;
+        }
+        div:empty{
+            border: 10px solid green;
+        } */
+
+        /* p:not(.p1){
+            color: red;
+        } */
+
+        /* p:lang(en){
+            color: red;
+        } */
+
+        /* ul a:link{
+            background-color: black;
+            color: wheat;
+        }  */
+
+        /* ul a:hover{
+            color: blue;
+        } */
+
+        /* ul a:visited{
+            color: green;
+        } */
+
+        /* ul a:active{
+            color: green;
+        } */
+
+        p:target{
+            background: lightblue;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS pseudo classes and elements</h1>
+    <ul id="list">
+        <li>Lorem ipsum dolor sit amet.</li>
+        <li>Lorem ipsum dolor sit amet.</li>
+        <li>Lorem ipsum dolor sit amet.</li>
+        <li>Lorem ipsum dolor sit amet.</li>
+        <li>Lorem ipsum dolor sit amet.</li>
+        <li>Lorem ipsum dolor sit amet.</li>
+    </ul>
+    <p class="p1">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum veritatis mollitia in, iusto assumenda quo harum earum quidem distinctio modi porro? Doloribus provident tempora ipsum.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum veritatis mollitia in, iusto assumenda quo harum earum quidem distinctio modi porro? Doloribus provident tempora ipsum.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum veritatis mollitia in, iusto assumenda quo harum earum quidem distinctio modi porro? Doloribus provident tempora ipsum.</p>
+
+    <div></div>
+
+    <ul id="list-two">
+        <li>Lorem ipsum dolor sit amet consectetur.</li>
+        <li>Lorem ipsum dolor sit amet consectetur.</li>
+        <li>Lorem ipsum dolor sit amet consectetur.</li>
+        <li>Lorem ipsum dolor sit amet consectetur.</li>
+    </ul>
+
+    <div></div>
+
+    <p lang="en">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur doloribus quas maxime quaerat consectetur ut, pariatur exercitationem inventore, nobis veritatis voluptas, alias odit magni qui?</p>
+    <p lang="fr">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur doloribus quas maxime quaerat consectetur ut, pariatur exercitationem inventore, nobis veritatis voluptas, alias odit magni qui?</p>
+    <ul>
+        <li>Lorem ipsum dolor sit amet consectetur.</li>
+    </ul>
+
+    <ul>
+        <li><a href="#first">Home</a></li>
+        <li><a href="#second">About</a></li>
+        <li><a href="#third">Contact</a></li>
+    </ul>
+
+    <p id="first">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, iste.</p>
+    <p id="second">Avi Patel</p>
+    <p id="third">Rajendrabhai</p>
+</body>
+</html>

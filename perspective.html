@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS : perspective</title>
+    <style>
+        .class1{
+            height: 250px;
+            width: 350px;
+            background-color: grey;
+            text-align: center;
+            margin: 100px 0 0 100px;
+            perspective: 800px;
+            /* perspective-origin: left; */
+            /* perspective-origin: top right; */
+            perspective-origin: 50% 50%;
+        }
+        .class2{
+            width: 350px;
+            height: 250px;
+            background-color: tomato;
+            transform: rotateY(60deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="class1">
+        <div class="class2">Avi Patel</div>
+    </div>
+</body>
+</html>

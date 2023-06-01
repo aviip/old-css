@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 
+        p::after{
+            color: red;
+            font-size: 23px;
+            content: attr(class);
+            content: attr(data-name);
+        } */
+        p:hover::after{
+            color: red;
+            font-size: 23px;
+            /* content: attr(class); */
+            content: attr(data-name);
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS : Attribute</h1>
+    <p class="Raj" data-name=" Patel">Avi</p>
+</body>
+</html>

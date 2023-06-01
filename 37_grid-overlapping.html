@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            background: #eee;
+            width: 300px;
+            margin: 45px auto 0;
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            grid-template-rows: repeat(2,120px);
+        }
+        .box1{
+            background: lightblue;
+            grid-column: 1 / span 2;
+            grid-row: 1/ span 2;
+            align-self: start;
+            z-index: 2;
+        }
+        .box2{
+            background: lightsalmon;
+            grid-column: 1 / span 2;
+            grid-row: 1/ span 2;
+            align-self: center;
+            justify-self: center;
+            z-index: 1;
+        }
+        .box3{
+            background: lightseagreen;
+            grid-column: 1 / span 2;
+            grid-row: 1/ span 2;
+            align-self: end;
+            justify-self: end;
+            z-index: 3;
+        }
+        .box{
+            font-size: 20px;
+            font-weight: bold;
+            padding: 10px auto 10px;
+            text-align: center;
+            max-width: 150px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box box1">One Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto, quidem.</div>
+        <div class="box box2">Two Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis, ipsa.</div>
+        <div class="box box3">Three Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi, deleniti?</div>
+    </div>
+</body>
+</html>

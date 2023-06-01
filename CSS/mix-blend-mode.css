@@ -1,0 +1,47 @@
+/* .box4{
+    width: 200px;
+    height: 200px;
+    border: 2px solid black;
+    background-image: url(imagess/pexels-lilartsy-1624076.jpg);
+    background-image: linear-gradient(to right, red ,yellow);
+    background-size: cover;
+    background-color: red;
+}
+
+img{
+    mix-blend-mode: darken;
+}
+
+h2{
+    background-color: lightblue;
+    margin-top: 40%;
+    text-align: center;
+    font-size: 25px;
+    mix-blend-mode: overlay;
+    mix-blend-mode: hue;
+} */
+
+
+
+/* for id="box" */
+
+#box{
+    width: 400px;
+    height: 300px;
+    border: 2px solid black;
+    
+}
+h2{
+    font-size: 40px;
+}
+
+.first{
+    color: red;
+}
+
+.second{
+    color: blue;
+    margin-top: -100px;
+    margin-bottom: 75px;
+    mix-blend-mode: difference;
+}

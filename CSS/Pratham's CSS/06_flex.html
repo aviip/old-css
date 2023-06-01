@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex</title>
+    <style>
+
+        body{
+            background: #02023a;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .box{
+            height: 150px;
+            width: 200px;
+            font-size: larger;
+            font-weight: 900;
+            background: #e787b7;
+            border: 0.1em solid ;
+            color: #000000;
+            margin: 1em 1em 0 0;
+            text-align: center;
+            padding-top: 2.5em;
+            box-sizing: border-box;
+            border-radius: 0.5em;
+        }
+        .main_box{
+            display: flex;
+            /* flex-direction: column; */
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            /* align-content: space-around; */
+        }
+        #box_1{
+            justify-self: center;
+            /* order: 3; */
+            flex-shrink: 0;
+        }
+        #box_2{
+            justify-self: center;
+            /* order: 4; */
+        }
+        #box_3{
+            justify-self: center;
+            /* order: 2; */
+            /* flex-grow: 2; */
+        }
+        #box_4{
+            justify-self: center;
+            /* order: 1; */
+            /* flex-grow: 2; */
+        }
+    </style>
+</head>
+<body>
+    <div class="main_box">
+        <div class="box" id="box_1">One</div>
+        <div class="box" id="box_2">Two</div>
+        <div class="box" id="box_3">Three</div>
+        <div class="box" id="box_4">Four</div>
+        <div class="box" id="box_5">Five</div>
+        <div class="box" id="box_6">Six</div> 
+        <div class="box" id="box_7">Seven</div> 
+        <div class="box" id="box_8">Eight</div> 
+        <div class="box" id="box_9">Nine</div> 
+        <div class="box" id="box_10">Ten</div> 
+    </div>   
+</body>
+</html>

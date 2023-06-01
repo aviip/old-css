@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animations</title>
+    <style>
+        .animation_box{
+            height: 100px;
+            width: 100px;
+            animation: move_change 4s linear infinite alternate;
+            background: red;
+            position: relative;
+            border: 1px solid black;
+        }
+        
+        @keyframes move_change {
+            0%{
+                left: 0;
+                background: red;
+            }
+            25%{
+                left: 100px;
+                background-color: black;
+            }
+            50%{
+                left: 200px;
+                background: yellow;
+            }
+            75%{
+                left: 300px;
+                background: hotpink;
+            }
+            100%{
+                left: 400px;
+                background: green;
+            }
+        }
+
+        .forward_box {
+            height: 100px;
+            width: 100px;
+            background: #28527a;
+            animation: move 4s;
+            animation-fill-mode: forwards;
+            font-size: 24px;
+        }
+
+        .backward_box {
+            height: 100px;
+            width: 100px;
+            color: white;
+            background: #eb5e0b;
+            animation: move-backwards 6s;
+            animation-delay: 2s;
+            animation-fill-mode: backwards;
+            font-size: 22px;
+        }
+        @keyframes move{
+            from{
+                left: 0;
+            }
+            to{
+                left: 400px;
+            }
+        }
+        @keyframes move-backwards {
+        0% {
+            background: black;
+        }
+        100% {
+            background: #eb5e0b;
+        }
+        }
+    </style>
+</head>
+<body>
+    <!-- <div class="animation_box"></div> -->
+    <div class="forward_box">forwards</div>
+    <div class="backward_box">backward</div>
+</body>
+</html>

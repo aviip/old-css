@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            background: #eee;
+            width: 700px;
+            margin: 50px 0 0 50px;
+
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            grid-template-rows: 150px 150px 150px;
+
+
+            /* grid-row-gap: 15px;
+            grid-column-gap: 30px; */
+
+            grid-gap: 150px 100px;
+        }
+        .items1{
+            background: orangered;
+        }
+        .items2{
+            background: darkgreen;
+        }
+        .items3{
+            background: purple;
+        }
+        .items4{
+            background: hotpink;
+        }
+        .items5{
+            background: slateblue;
+        }
+        .items6{
+            background: goldenrod;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="items1">First</div>
+        <div class="items2">Second</div>
+        <div class="items3">Third</div>
+        <div class="items4">Fourth</div>
+        <div class="items5">Fifth</div>
+        <div class="items6">Sixth</div>
+    </div>
+</body>
+</html>

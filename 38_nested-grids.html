@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            font-size: 20px;
+            font-weight: bold;
+            padding: 10px;
+            text-align: center;
+        }
+        .container{
+            background: cornsilk;
+            width: 600px;
+            margin: 45px auto 0;
+            padding: 10px;
+            display: grid;
+            grid-gap: 10px;
+            grid-template-columns: repeat(2,1fr);
+            grid-template-rows: repeat(2,150px);
+        }
+        .box1{
+            background: lightblue;
+        }
+        .box2{
+            background: lightsalmon;
+        }
+        .box3 > div{
+            background: blueviolet;
+            padding: 10px;
+        }
+        .box3{
+            background: lightseagreen;
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            grid-gap: 5px;
+        }
+        .box4{
+            background: lightskyblue;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box box1">One </div>
+        <div class="box box2">Two</div>
+        <div class="box box3">
+            <div class="subbox1">A</div>
+            <div class="subbox2">B</div>
+            <div class="subbox3">C</div>
+        </div>
+        <div class="box box4">Four</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid minmax()</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+        }
+        .container div{
+            padding: 10px;
+        }
+        .container{
+            width: 700px;
+            margin: 45px auto 0 ;
+
+            display: grid;
+            /* grid-template-columns: max-content 1fr 1fr 1fr ; */
+            /* grid-template-columns: minmax(150px,50%) 1fr 1fr 1fr ; */
+            grid-template-columns: repeat(4,minmax(150px,25%));
+            /* grid-template-rows: repeat(2,min-content); */
+            grid-template-rows: repeat(2,minmax(150px,min-content));
+            grid-gap: 5px;
+        }
+        .box1{
+            background: lightblue;
+        }
+        .box2{
+            background: lightsalmon;
+        }
+        .box3{
+            background: lightseagreen;
+        }
+        .box4{
+            background: lightskyblue;
+        }
+        .box5{
+            background: lightslategray;
+        }
+        .box6{
+            background: lightyellow;
+        }
+        .box7{
+            background: lightgreen;
+        }
+        .box8{
+            background: lightpink;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box1">One Lorem ipsum dolor sit amet.</div>
+        <div class="box2">Two</div>
+        <div class="box3">Three</div>
+        <div class="box4">Four Lorem ipsum doloraguguu sit amet.</div>
+        <div class="box5">Five</div>
+        <div class="box6">Six</div>
+        <div class="box7">Seven</div>
+        <div class="box8">Eight</div>
+    </div>
+</body>
+</html>

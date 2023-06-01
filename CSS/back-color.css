@@ -1,0 +1,17 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    /* background-color: gold; */
+    background-image: url(imagess/pexels-pixabay-247599.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.box{
+    width: 800px;
+    height: 300px;
+    padding: 30px;
+    border: 3px solid black;
+    /* background-color: #8b037579; */
+    /* background-color: hsl(20, 100%, 80%); */
+    background-color: rgba(255, 0, 0,0.5);
+}

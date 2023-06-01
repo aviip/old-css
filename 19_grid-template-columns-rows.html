@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS grid</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .container{
+            background: #eee;
+            width: 700px;
+            height: 800px;
+            margin: 70px 0 0 50px;
+            display: grid;
+            /* grid-template-columns: 450px 200px; */
+            /* grid-template-columns: 250px auto 200px ; */
+            /* grid-template-columns: 50% 20% auto ; */
+            /* grid-template-columns: 1fr 1fr ; */
+            /* grid-template-columns: 1fr 2fr 1fr ; */
+            grid-template-columns: repeat(2,25%) 2fr;
+            /* grid-template-rows: 150px 180px 100px; */
+            grid-template-rows: repeat(2,1fr);
+            grid-gap: 5%;
+        }
+        .items1{
+            background: orangered;
+        }
+        .items2{
+            background: yellowgreen;
+        }
+        .items3{
+            background: slateblue;
+        }
+        .items4{
+            background: hotpink;
+        }
+        .items5{
+            background: royalblue;
+        }
+        .items6{
+            background: goldenrod;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS : grid</h1>
+    <div class="container">
+        <div class="items items1">first</div>
+        <div class="items items2">second</div>
+        <div class="items items3">third</div>
+        <div class="items items4">fourth</div>
+        <div class="items items5">five</div>
+        <div class="items items6">six</div>
+    </div>
+</body>
+</html>

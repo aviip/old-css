@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Properties</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table{
+            width: 300px;
+            /* border-spacing: 15px 20px; */
+            border-collapse: collapse;
+            /* empty-cells: hide; */
+            table-layout: auto;
+        }
+        table, td, th{
+            border: 1px solid black;
+        }
+        td{
+            vertical-align: top;
+            padding: 10px;
+        }
+        tr:hover{
+            background-color: lightgrey;
+        }
+        tr:nth-child(even){
+            background-color: lightgrey;
+        }
+        caption{
+            caption-side: bottom;
+        }
+    </style>
+</head>
+<body>
+    <h1>Table Properties Of CSS</h1>
+    <table>
+        <caption>Employee record</caption>
+            <tr>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Savings</th>
+                </tr>
+        <tbody>
+            <tr>
+                <td>Mohan Lorem ipsum dolor sit amet.</td>
+                <td>Kumar</td>
+                <td>$100</td>
+            </tr>
+            <tr>
+                <td>Salim Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio assumenda minus sunt accusamus. Fugiat, quae! </td>
+                <td>Khan</td>
+                <td>$150</td>
+            </tr>
+            <tr>
+                <td>Inder</td>
+                <td>Singh</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Peter</td>
+                <td>Brown</td>
+                <td>$250</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

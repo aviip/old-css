@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Z-Index</title>
+    <style>
+        .first{
+            height: 40vh;
+            width: 40%;
+            background: violet;
+            box-sizing: border-box;
+            border: 0.1em solid black;
+            padding: 5em 0 0 5em;
+            box-shadow: 0 0 0.5em;
+            position: relative;
+            z-index: 2;
+        }
+        .second{
+            height: 40vh;
+            width: 20vw;
+            background: tan;
+            border: 0.1em solid black;
+            box-shadow: 0 0 0.5em;
+            padding: 2em 0 0 2em;
+            position: relative;
+            box-sizing: border-box;
+            left: 2vw;
+            top: 2vh;
+            /* z-index: 1; */
+        }
+        .third{
+            height: 30vh;
+            width: 30vw;
+            box-shadow: 0 0 0.5em;
+            padding: 5em 0 0 5em;
+            border: .1em solid black;
+            background-color: blueviolet;
+            box-sizing: border-box;
+            position: relative;
+            left: 1vw;
+            top: 1vh;
+            z-index: -1;
+        }
+    </style>
+</head>
+<body>
+    <div class="first">first
+        <div class="second">second</div>
+        <div class="third">third</div>
+    </div>
+</body>
+</html>

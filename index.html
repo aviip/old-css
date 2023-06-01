@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic - Layouts</title>
+    <style>
+        :root{
+            /* --main_color: linear-gradient(to right,lightblue,black); */
+            --main_color: linear-gradient(to right,purple,black);
+        }
+        body{
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        h1{
+            text-shadow: 0.5px 0.5px ;
+            color: white;
+        }
+        #header{
+            /* background: var(--main_color); */
+            background-image: linear-gradient(to right,black,purple);
+            height: 100px;
+            padding: 20px 0 0 20px;
+            margin: 0;
+        }
+        #menu{
+            /* background: var(--main_color); */
+            background:linear-gradient(to right,lightblue,black) ;
+            height: 40px;
+            box-sizing: border-box;
+        }
+        #menu ul{
+            padding-top: 5px;
+            margin: 0;
+        }
+        #menu ul li{
+            display: inline-block;
+            padding: 5px;
+            padding-right: 15px;
+        }
+        #menu ul li a{
+            text-decoration: none;
+            color: black;
+            font-weight: 550;
+        }
+        #menu ul li a:hover{
+            text-shadow: 1px 0px;
+        }
+        #content{
+            background-color: lightgray;
+            width: 60%;
+            float: left;
+            height: 526px;
+            padding-left: 15px;
+            box-sizing: border-box;
+        }
+        
+        #sidebar{
+            float: right;
+            background-color: lavender;
+            width: 40%;
+            height: 526px;
+        }
+        #sidebar ul li{
+            padding: 15px;
+        }
+        #sidebar ul li a{
+            text-decoration: none;
+            color: black;
+            font-weight: 550;
+        }
+        #footer{
+            clear: both;
+            background: linear-gradient(to right,black,lightblue);
+            height: 40px;
+            font-weight: 550;
+            text-align: right;
+            padding: 10px 85px 0 0;
+            box-sizing: border-box;
+        }
+        @media screen and (max-width:1200px){
+            #wrapper{
+                width: 800px;
+            }
+        }
+        @media screen and (max-width:800px){
+            #wrapper{
+                width: 500px;
+            }
+        }
+        @media screen and (max-width:500px){
+            #wrapper{
+                width: 300px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+        <div id="header">
+            <h1> Programming</h1>
+        </div>
+        <div id="menu">
+            <ul>
+                <li><a href="">Home</a><i class="fa fa-instagram" aria-hidden="true"></i></li>
+                <li><a href="">About Us</a></li>
+                <li><a href="">Gallery</a></li>
+                <li><a href="">Contact Us</a></li>
+            </ul>
+        </div>
+        <div id="content">
+            <h2>Sub-Heading</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut vitae veritatis dignissimos doloribus, nemo illum nostrum unde quaerat repellat possimus iste enim officiis, quidem libero dolorum harum ea asperiores eveniet amet adipisci provident ipsam mollitia officia? Earum dolore molestias sint obcaecati. Voluptate tempore error nihil autem saepe fugit aliquid cumque?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut ipsa suscipit quibusdam deleniti dicta debitis est atque, rem accusantium maxime adipisci in, magni reprehenderit molestias recusandae minima quasi error facilis at accusamus. Officiis, asperiores laudantium!</p>
+        </div>
+        <div id="sidebar">
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">About Us</a></li>
+                <li><a href="">Gallery</a></li>
+                <li><a href="">Contact Us</a></li>
+            </ul>
+        </div>
+        <div id="footer">
+            copyright &copy; Avi Patel
+        </div>
+    </div>
+</body>
+</html>
